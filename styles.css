@@ -56,6 +56,16 @@ header {
     color: rgb(255, 255, 255);
 }
 
+.moon {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 45px;
+}
+
 .main {
     height: 80vh;
 }
