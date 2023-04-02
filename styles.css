@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 60px;
     line-height: 70px;
     font-weight: 300;
     margin: 10px 0;
@@ -102,6 +102,8 @@ header {
 
 .main {
     height: 80vh;
+    display: flex;
+    flex-direction: row;
 }
 
 .mian-text {
@@ -126,6 +128,107 @@ header {
     display: flex;
     flex-wrap: wrap;
 }
+
+.hero-image {
+    position: relative;
+    width: 50%;
+    height: 350px;
+
+}
+
+.cube {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    transform: rotate(-25deg) skew(25deg);
+}
+
+.cube:before {
+    position: absolute;
+    content: "";
+    width: 21px;
+    height: 100%;
+    transform: skewY(-45deg);
+    left: -20px;
+    bottom: -10px;
+}
+
+.cube:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 21px;
+    transform: skewx(-45deg);
+    left: -10px;
+    bottom: -20px;
+}
+
+#html {
+    left: 100px;
+    bottom: 80px;
+    background-image: url("images/html-square.png");
+    background-size: cover;
+    background-color: rgb(255, 138, 5);
+    box-shadow: -60px 55px 10px rgb(50 50 50/ 15%);
+}
+
+.dark #html {
+    box-shadow: -60px 55px 10px rgba(0, 0, 0, 0.438);
+}
+
+
+#html:before {
+    background-color: rgb(255, 160, 50);
+}
+
+#html:after {
+    background-color: rgb(255, 178, 90);
+}
+
+#css {
+    left: 250px;
+    bottom: 240px;
+    background-image: url("images/css-square.png");
+    background-size: cover;
+    background-color: rgb(5, 155, 255);
+    box-shadow: -60px 60px 10px rgb(50 50 50/ 15%);
+}
+
+.dark #css {
+    box-shadow: -60px 60px 10px rgba(0, 0, 0, 0.438);
+}
+
+
+#css:before {
+    background-color: rgb(56, 173, 250);
+}
+
+#css:after {
+    background-color:  rgb(97, 189, 250);
+}
+
+#javascript {
+    left: 450px;
+    bottom: 80px;
+    background-image: url("images/javascript-square.png");
+    background-size: cover;
+    background-color: rgb(255, 238, 5);
+    box-shadow: -60px 50px 10px rgb(50 50 50/ 15%);
+}
+
+.dark #javascript {
+    box-shadow: -60px 50px 10px rgba(0, 0, 0, 0.438);
+}
+
+
+#javascript:before {
+    background-color:  rgb(255, 242, 61);
+}
+
+#javascript:after {
+    background-color:   rgb(255, 245, 107);
+}
+
 
 footer {
 
